@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    padding: 19px 12px;
+    color: #fff;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logo span {
+    font-size: 20px;
+}
+
+.logo img {
+    margin-right: 4px;
+    width: 18px;
+    filter: invert(1);
+}
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+    padding: 0px 15px;
+    
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+ul li a:hover {
+    color: rgb(218, 188, 234);
+}
+main {
+    min-height: 81.5vh;
+    overflow: hidden;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+}
+.container h1 {
+    padding: 12px 0px;
+}
+.container label {
+    font-size: 16px;
+    font-weight: 400;
+}
+input[type='text'] {
+    min-width: 250px;
+    padding: 4px 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.hbtn {
+    /* position: absolute;
+    left: 300px; */
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+#crosh {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    right: 0px;
+    top: 60px;
+
+}
+.btn {
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#container_result {
+    width: 35vw;
+    height: 81.5vh;
+    background-color:rgb(233, 223, 223);
+   
+}
+
+#container_result h1 {
+    font-size: 28px;
+    /* border-bottom: 2px solid gray; */
+    margin: 8px 5px;
+    width: 200px;
+
+}
+#result div::first-letter {
+    text-transform: uppercase;
+    margin-left: 9px;
+}
+
+
+footer {
+    color: white;
+    background-color: black;
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.hide {
+    display: none;
+}
+@media only screen and (max-width:600px) {
+    body {
+       background-color: rgb(212, 205, 205);
+    }
+
+    nav {
+        flex-direction: row;
+    }
+    .logo {
+        padding: 6px 0px;
+    }
+    .logo img {
+        width: 18px;
+        filter: invert(1);
+    }
+    main{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    #container_result {
+        width: 100vw;
+        background-color: rgb(212, 205, 205);
+    }
+    #container_result h1 {
+        width: 200px;
+    }
+    .container {
+        font-size: 12px;
+    }
+}
